@@ -9,12 +9,7 @@ Customized colors, layout tweaks, restructured content sections, add Japanese fo
 
 ## Copyright
 © 2025 Ithaca LLC
-Includes works © 2025 [JustGoodUI] under GPL-3.0
-Disclaimer
-This project (including any modifications or derivative works) is provided “as is,” without any warranty of any kind. See the LICENSE for details.
-
-## Credits
-JustGoodUI/dante-astro-theme for the original theme.
+Includes works © 2025 [JustGoodUI](https://github.com/JustGoodUI/dante-astro-theme/tree/main) under GPL-3.0
 
 ## Template Integrations
 
