@@ -54,7 +54,7 @@ All commands are run from the root of the project, from a terminal:
 
 Based on “Dante Astro Theme” by JustGoodUI
 This project incorporates the Dante Astro Theme originally created by JustGoodUI.
-The theme is licensed under the GNU General Public License v3.0 [GPL-3.0](https://github.com/JustGoodUI/dante-astro-theme/blob/main/LICENSE) 
+The theme is licensed under the GNU General Public License v3.0 [GPL-3.0](https://github.com/ithaca/lp/blob/main/LICENSE) 
 
 ## Modifications from the original theme
 
