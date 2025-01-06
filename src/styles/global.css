@@ -1,6 +1,8 @@
-@import '@fontsource-variable/inter';
+/* @import '@fontsource-variable/inter';
 @import '@fontsource-variable/newsreader';
-@import '@fontsource-variable/newsreader/wght-italic.css';
+@import '@fontsource-variable/newsreader/wght-italic.css'; */
+
+@import '@fontsource-variable/nunito';
 
 @tailwind base;
 @tailwind components;
@@ -37,8 +39,8 @@
     */
 
     /* Green */
-    /*
-    :root {
+
+    /* :root {
         --color-text-main: 58 66 56;
         --color-bg-main: 243 239 230;
         --color-bg-muted: 238 233 220;
@@ -49,6 +51,5 @@
         --color-bg-main: 94 108 91;
         --color-bg-muted: 89 103 86;
         --color-border-main: 243 239 230;
-    }
-    */
+    } */
 }
