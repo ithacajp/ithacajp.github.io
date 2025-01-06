@@ -1,16 +1,5 @@
 # Corporate page of Ithaca, LLC.
 
-Based on “Dante Astro Theme” by JustGoodUI
-This project incorporates the Dante Astro Theme originally created by JustGoodUI.
-The theme is licensed under the GNU General Public License v3.0 [GPL-3.0](https://github.com/JustGoodUI/dante-astro-theme/blob/main/LICENSE) 
-
-## Modifications from the original theme
-Customized colors, layout tweaks, restructured content sections, add Japanese fonts.
-
-## Copyright
-© 2025 Ithaca LLC
-Includes works © 2025 [JustGoodUI](https://github.com/JustGoodUI/dante-astro-theme/tree/main) under GPL-3.0
-
 ## Template Integrations
 
 - @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
@@ -60,4 +49,19 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## License
+
+Based on “Dante Astro Theme” by JustGoodUI
+This project incorporates the Dante Astro Theme originally created by JustGoodUI.
+The theme is licensed under the GNU General Public License v3.0 [GPL-3.0](https://github.com/JustGoodUI/dante-astro-theme/blob/main/LICENSE) 
+
+## Modifications from the original theme
+
+Customized colors, layout tweaks, restructured content sections, add Japanese fonts.
+
+## Copyright
+
+© 2025 Ithaca LLC
+Includes works © 2025 [JustGoodUI](https://github.com/JustGoodUI/dante-astro-theme/tree/main) under GPL-3.0
 
