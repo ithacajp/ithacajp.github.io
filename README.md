@@ -2,25 +2,10 @@
 
 Based on “Dante Astro Theme” by JustGoodUI
 This project incorporates the Dante Astro Theme originally created by JustGoodUI.
-The theme is licensed under the GNU General Public License v3.0 (GPL-3.0).
+The theme is licensed under the GNU General Public License v3.0 [GPL-3.0](https://github.com/JustGoodUI/dante-astro-theme/blob/main/LICENSE) 
 
-## Modifications
+## Modifications from the original theme
 Customized colors, layout tweaks, restructured content sections, add Japanese fonts.
-
-## Key points of GPL-3.0 compliance:
-
-### Source Code Availability
-If you modify and distribute the code, you must also make your modified source code available under the same GPL-3.0 license.
-
-### Retaining Copyright Notices
-All existing copyright notices in the Dante Astro Theme and any additional notices you include must remain intact.
-
-### License Notice
-Do not remove or alter the licensing and copyright statements.
-Provide a copy of the GPL-3.0 (i.e., the LICENSE file) whenever you distribute your version.
-
-### Disclaimer of Warranty
-The GPL-3.0 disclaims warranties to the extent permitted by applicable law. You must keep this disclaimer intact.
 
 ## Copyright
 © 2025 Ithaca LLC
@@ -81,6 +66,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## License
-
-Licensed under the [GPL-3.0](https://github.com/JustGoodUI/dante-astro-theme/blob/main/LICENSE) license.
