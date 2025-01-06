@@ -1,28 +1,35 @@
-# Dante - Astro & Tailwind CSS Theme by justgoodui.com
+# Corporate page of Ithaca, LLC.
 
-Dante is a single-author blog and portfolio theme for Astro.js. Featuring a minimal, slick, responsive and content-focused design. For more Astro.js themes please check [justgoodui.com](https://justgoodui.com/).
+Based on “Dante Astro Theme” by JustGoodUI
+This project incorporates the Dante Astro Theme originally created by JustGoodUI.
+The theme is licensed under the GNU General Public License v3.0 (GPL-3.0).
 
-![Dante Astro.js Theme](public/dante-preview.jpg)
+## Modifications
+Customized colors, layout tweaks, restructured content sections, add Japanese fonts.
 
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JustGoodUI/dante-astro-theme)
+## Key points of GPL-3.0 compliance:
 
-If you click this☝️ button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
+### Source Code Availability
+If you modify and distribute the code, you must also make your modified source code available under the same GPL-3.0 license.
 
-## Theme Features:
+### Retaining Copyright Notices
+All existing copyright notices in the Dante Astro Theme and any additional notices you include must remain intact.
 
-- ✅ Dark and light color mode
-- ✅ Hero section with bio
-- ✅ Portfolio collection
-- ✅ Pagination support
-- ✅ Post tags support
-- ✅ Subscription form
-- ✅ View transitions
-- ✅ Tailwind CSS
-- ✅ Mobile-first responsive layout
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+### License Notice
+Do not remove or alter the licensing and copyright statements.
+Provide a copy of the GPL-3.0 (i.e., the LICENSE file) whenever you distribute your version.
+
+### Disclaimer of Warranty
+The GPL-3.0 disclaims warranties to the extent permitted by applicable law. You must keep this disclaimer intact.
+
+## Copyright
+© 2025 Ithaca LLC
+Includes works © 2025 [JustGoodUI] under GPL-3.0
+Disclaimer
+This project (including any modifications or derivative works) is provided “as is,” without any warranty of any kind. See the LICENSE for details.
+
+## Credits
+JustGoodUI/dante-astro-theme for the original theme.
 
 ## Template Integrations
 
@@ -73,19 +80,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## Want to learn more about Astro.js?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credits
-
-- Demo content generate with [Chat GPT](https://chat.openai.com/)
-- Images for demo content from [Unsplash](https://unsplash.com/)
-
-## Astro Themes by Just Good UI
-
-- [Ovidius](https://github.com/JustGoodUI/ovidius-astro-theme) is a free single author blog theme.
 
 ## License
 
