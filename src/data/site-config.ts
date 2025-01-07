@@ -51,10 +51,10 @@ const siteConfig: SiteConfig = {
     title: '合同会社イタカ',
     subtitle: '創るよろこび',
     description: '小型自走式ペンプロッターお合同会社イタカの会社サイトです。',
-    // image: {
-    //     src: '/dante-preview.jpg',
-    //     alt: 'Dante - Astro.js and Tailwind CSS theme'
-    // },
+    image: {
+        src: '/ithaca-product.png',
+        alt: 'Ithaca product iimage'
+    },
     about: {
         companyName: '合同会社イタカ',
         founded: '2024年4月26日',
@@ -125,8 +125,8 @@ const siteConfig: SiteConfig = {
         title: 'The Joy of Creating',
         text: "創りだすよろこび",
         // image: {
-        //     src: '/hero.jpeg',
-        //     alt: 'A person sitting at a desk in front of a computer'
+        //     src: '/ithaca-product.png',
+        //     alt: 'Ithaca product image'
         // },
         // actions: [
         //     {
