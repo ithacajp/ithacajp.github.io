@@ -5,11 +5,11 @@ publishDate: 'Jan 07 2025'
 isFeatured: true
 seo:
   image:
-    src: '/project-1.jpg'
+    src: '/project-1.png'
     alt: Project preview
 ---
 
-![Project preview](/project-1.jpg)
+![Project preview](/project-1.png)
 
 **Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
 
