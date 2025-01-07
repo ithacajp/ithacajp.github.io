@@ -3,7 +3,10 @@ import NavLink from './NavLink.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import siteConfig from '../data/site-config';
 
-const navLinks = siteConfig.headerNavLinks || [];
+let navLinks = siteConfig.headerNavLinks || [];
+
+// Remove the `Home` link so it doesn’t appear in the nav
+navLinks = navLinks.filter((link) => link.text !== 'Home');
 ---
 
 <nav class="min-h-10 pt-4 pb-12 relative sm:min-h-14 sm:pb-24 md:pt-8">
@@ -18,11 +21,16 @@ const navLinks = siteConfig.headerNavLinks || [];
                 >
                     <span class="menu-toggle-icon w-6 h-px relative bg-current" />
                 </button>
-                <ul id="menu-items" class="menu flex gap-6">
+                <ul id="menu-items" class="menu flex gap-6 items-baseline">
+                    <li class="py-1">
+                        <a href="/" class="text-3xl font-sans font-semi-bold text-main no-underline hover:no-underline md:text-4xl">
+                            Ithaca
+                        </a>
+                    </li>
                     {navLinks.map((link) => (
                         <li class="py-1">
                             <NavLink
-                                class="text-xl font-serif text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
+                                class="text-xl font-sans text-main hover:underline hover:underline-offset-2 hover:decoration-1 md:text-base"
                                 href={link.href}
                             >
                                 {link.text}

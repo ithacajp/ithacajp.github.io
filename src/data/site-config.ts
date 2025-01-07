@@ -38,9 +38,9 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Ithaca, LLC',
+    title: '合同会社イタカ',
     subtitle: '創るよろこび',
-    description: '合同会社イタカの会社サイトです。',
+    description: '小型自走式ペンプロッターお合同会社イタカの会社サイトです。',
     // image: {
     //     src: '/dante-preview.jpg',
     //     alt: 'Dante - Astro.js and Tailwind CSS theme'
@@ -53,6 +53,10 @@ const siteConfig: SiteConfig = {
         {
             text: 'Projects',
             href: '/projects'
+        },
+        {
+            text: 'News',
+            href: '/news'
         },
         {
             text: 'Blog',

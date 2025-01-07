@@ -11,18 +11,18 @@ seo:
 
 ![Project preview](/project-1.png)
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
-
 **Project Overview:**
-EcoBuddy is a revolutionary mobile application designed to make sustainable living accessible, engaging, and rewarding. With a focus on gamification and real-world impact, EcoBuddy encourages users to adopt eco-friendly habits, reduce their carbon footprint, and contribute to a healthier planet.
+スマホアプリからアップロードした画像を、大きなサイズの任意の素材の紙や表面に、任意のペンで描ける小型自走式のロボットを開発中です。
 
-## Objectives
+## 新しい印刷のあり方
 
-1. Develop a user-friendly mobile app that motivates individuals to adopt sustainable practices in their daily lives.
-2. Utilize gamification elements to make sustainable living fun and interactive.
-3. Provide educational resources and personalized challenges to empower users to make informed eco-conscious decisions.
+- 既存の印刷機と違って、自走式ロボットは小さく、枠などが不要なので、場所を取らない
+- 既存の印刷機と違って、好きなサイズのいくらでも大きな紙に描ける
+- 既存の印刷機と違って、好きな筆記用具で描ける
+- 既存の類似プロダクト（自作キット・おもちゃ）に比べて長い距離をロボットが走行しても位置を補正する仕組みで、- 精確に描き続けることが出来る
+- 精確に描けるので、洋裁型紙の作成や、絵画の下絵、塗り絵の作成といった趣味用途、業務用途にも使える
 
-## Features
+## ユースケース例
 
 1. **EcoScore and Challenges:**
 
@@ -63,5 +63,3 @@ EcoBuddy has successfully created a community of environmentally conscious indiv
 ## Client Testimonial
 
 > We couldn't be happier with the results delivered by Ethan Donovan. From the initial concept discussions to the final product, their responsiveness and collaborative approach were impressive. Our startup's website now stands out, thanks to their creative input and commitment to excellence.
-
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
