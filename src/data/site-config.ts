@@ -97,7 +97,7 @@ const siteConfig: SiteConfig = {
     // ],
     hero: {
         title: 'The Joy of Creating',
-        text: "創るよろこび",
+        text: "創りだすよろこび",
         // image: {
         //     src: '/hero.jpeg',
         //     alt: 'A person sitting at a desk in front of a computer'

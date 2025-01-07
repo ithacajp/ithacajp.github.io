@@ -1,7 +1,7 @@
 ---
-title: 'EcoBuddy: Sustainable Living App'
-description: EcoBuddy is a mobile app that gamifies sustainable living. Users can set eco-friendly goals, track their carbon footprint, and earn virtual rewards for adopting environmentally conscious habits.
-publishDate: 'Jan 02 2024'
+title: '小型自走式ペンプロッター'
+description: スマホアプリからアップロードした画像を、大きなサイズの任意の素材の紙や表面に、任意のペンで描ける小型自走式のロボットを開発中です。
+publishDate: 'Jan 07 2025'
 isFeatured: true
 seo:
   image:
