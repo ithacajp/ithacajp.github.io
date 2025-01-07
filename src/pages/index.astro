@@ -13,6 +13,7 @@ const featuredPosts = posts.filter(({ data }) => data.isFeatured);
 
 const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
 const featuredProjects = projects.filter(({ data }) => data.isFeatured);
+const newsItems = await getCollection('news');
 ---
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
@@ -40,6 +41,27 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
                 <div class="mt-12 sm:mt-16">
                     <Button href="/blog">View All Posts</Button>
                 </div>
+            </div>
+        )
+    }
+    {
+        newsItems?.length > 0 && (
+            <div class="mb-16 sm:mb-24">
+                <h2 class="mb-12 text-4xl font-sans font-semibold sm:mb-16 sm:text-4xl">News</h2>
+                {newsItems
+                    .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+                    .map((news) => (
+                        <p class="mb-3 font-medium ">
+                            <strong>
+                                {news.data.date.toLocaleDateString('ja-JP', {
+                                    year: 'numeric',
+                                    month: '2-digit',
+                                    day: '2-digit'
+                                })}
+                            </strong>{' '}
+                            — {news.data.title}
+                        </p>
+                    ))}
             </div>
         )
     }
