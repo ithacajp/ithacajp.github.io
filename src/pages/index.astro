@@ -5,6 +5,7 @@ import Button from '../components/Button.astro';
 import Hero from '../components/Hero.astro';
 import PostPreview from '../components/PostPreview.astro';
 import ProjectPreview from '../components/ProjectPreview.astro';
+import About from '../components/About.astro';
 import siteConfig from '../data/site-config';
 import { sortItemsByDateDesc } from '../utils/data-utils';
 
@@ -14,13 +15,21 @@ const featuredPosts = posts.filter(({ data }) => data.isFeatured);
 const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
 const featuredProjects = projects.filter(({ data }) => data.isFeatured);
 const newsItems = await getCollection('news');
+const aboutRows = [
+    { label: '会社名', value: siteConfig.about?.companyName },
+    { label: '設立日', value: siteConfig.about?.founded },
+    { label: '住所', value: siteConfig.about?.address },
+    { label: '資本金', value: siteConfig.about?.capital },
+    { label: '代表社員', value: siteConfig.about?.ceo },
+    { label: '法律顧問', value: siteConfig.about?.lawfirm }
+];
 ---
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
     <Hero />
     {
         featuredProjects?.length > 0 && (
-            <div class="mb-16 sm:mb-24">
+            <div id="projects" class="mb-16 sm:mb-24">
                 <h2 class="mb-12 text-4xl font-sans font-semibold sm:mb-16 sm:text-4xl">Projects</h2>
                 {featuredProjects.map((project) => (
                     <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
@@ -33,7 +42,7 @@ const newsItems = await getCollection('news');
     }
     {
         featuredPosts?.length > 0 && (
-            <div class="mb-16 sm:mb-24">
+            <div id="blog" class="mb-16 sm:mb-24">
                 <h2 class="mb-12 text-4xl font-sans font-semibold sm:mb-16 sm:text-4xl">Blog</h2>
                 {featuredPosts.map((post) => (
                     <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
@@ -46,7 +55,7 @@ const newsItems = await getCollection('news');
     }
     {
         newsItems?.length > 0 && (
-            <div class="mb-16 sm:mb-24">
+            <div id="news" class="mb-16 sm:mb-24">
                 <h2 class="mb-12 text-4xl font-sans font-semibold sm:mb-16 sm:text-4xl">News</h2>
                 {newsItems
                     .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
@@ -65,4 +74,8 @@ const newsItems = await getCollection('news');
             </div>
         )
     }
+
+    <div id="about">
+        <About sectionTitle="About" rows={aboutRows} />
+    </div>
 </BaseLayout>

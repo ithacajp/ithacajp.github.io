@@ -1,0 +1,33 @@
+---
+interface AboutRow {
+    label: string;
+    value: string;
+}
+
+/**
+ * Props definition:
+ *  - sectionTitle: The heading text (e.g. "About", "会社概要", etc.)
+ *  - rows: An array of label-value pairs for each row.
+ */
+export interface AboutProps {
+    sectionTitle?: string;
+    rows: AboutRow[];
+}
+
+const { sectionTitle = 'About', rows } = Astro.props as AboutProps;
+---
+
+<section class="mb-16 sm:mb-24">
+    <h2 class="mb-12 text-4xl font-sans font-semibold sm:mb-16 sm:text-4xl">
+        {sectionTitle}
+    </h2>
+
+    {
+        rows.map((row) => (
+            <div class="max-w-lg border-b border-main py-4 grid grid-cols-[auto,1fr] gap-4">
+                <p class="font-bold w-28 text-left">{row.label}</p>
+                <p class="text-left">{row.value}</p>
+            </div>
+        ))
+    }
+</section>

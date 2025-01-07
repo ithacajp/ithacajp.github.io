@@ -22,7 +22,17 @@ export type Subscribe = {
     formUrl: string;
 };
 
+export type About = {
+    companyName: string;
+    founded: string;
+    address: string;
+    ceo: string;
+    capital: string;
+    lawfirm: string;
+};
+
 export type SiteConfig = {
+    about?: About;
     logo?: Image;
     title: string;
     subtitle?: string;
@@ -45,6 +55,14 @@ const siteConfig: SiteConfig = {
     //     src: '/dante-preview.jpg',
     //     alt: 'Dante - Astro.js and Tailwind CSS theme'
     // },
+    about: {
+        companyName: '合同会社イタカ',
+        founded: '2024年4月26日',
+        address: '〒104-0061 東京都中央区銀座1-12-4 N&E BLD. 7F',
+        capital: '1,000,000円',
+        ceo: '豊田 史子',
+        lawfirm: '共栄法律事務所 小澤拓弁護士',
+      },
     headerNavLinks: [
         {
             text: 'Home',
@@ -52,16 +70,20 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Projects',
-            href: '/projects'
+            href: '#projects'
         },
         {
             text: 'News',
-            href: '/news'
+            href: '#news'
         },
         {
-            text: 'Blog',
-            href: '/blog'
+            text: 'About',
+            href: '#news'
         },
+        // {
+        //     text: 'Blog',
+        //     href: '/blog'
+        // },
         // {
         //     text: 'Tags',
         //     href: '/tags'

@@ -22,5 +22,3 @@ Coming Soon
 2. **Coming Soon:** Coming soon
 
 3. **Coming Soon:** Coming soon
-
-お楽しみに！

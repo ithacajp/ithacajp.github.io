@@ -5,10 +5,21 @@ type Props = HTMLAttributes<'a'>;
 
 const { href, class: className, ...props } = Astro.props;
 
-const { pathname } = Astro.url;
-const isActive = href === pathname || href === pathname.replace(/\/$/, '');
+// Figure out if we're on the home page
+const isOnHomePage = Astro.url.pathname === '/';
+
+// If href is just a hash and we’re NOT on `/`, prepend a slash
+// so that it links to "/" + "#some-section"
+let finalHref = href;
+if (typeof href === 'string' && href.startsWith('#') && !isOnHomePage) {
+    finalHref = '/' + href;
+}
+
+// Optional: highlight “active” if it matches our current pathname exactly
+// (This is up to you how you want to handle “active” states for hash links.)
+const isActive = finalHref === Astro.url.pathname || finalHref === Astro.url.pathname.replace(/\/$/, '');
 ---
 
-<a class:list={[className, { 'underline underline-offset-2 decoration-1': isActive }]} href={href} {...props}>
+<a class:list={[className, { 'underline underline-offset-2 decoration-1': isActive }]} href={finalHref} {...props}>
     <slot />
 </a>
