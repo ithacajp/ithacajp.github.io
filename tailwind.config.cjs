@@ -37,7 +37,25 @@ module.exports = {
                         '--tw-prose-pre-code': theme('colors.zinc.100'),
                         '--tw-prose-pre-bg': theme('colors.zinc.800'),
                         '--tw-prose-th-borders': theme('borderColor.main / 100%'),
-                        '--tw-prose-td-borders': theme('borderColor.main / 100%')
+                        '--tw-prose-td-borders': theme('borderColor.main / 100%'),
+                        h1: {
+                            fontFamily: `${theme('fontFamily.sans')}`
+                        },
+                        h2: {
+                            fontFamily: `${theme('fontFamily.sans')}`
+                        },
+                        h3: {
+                            fontFamily: `${theme('fontFamily.sans')}`
+                        },
+                        h4: {
+                            fontFamily: `${theme('fontFamily.sans')}`
+                        },
+                        h5: {
+                            fontFamily: `${theme('fontFamily.sans')}`
+                        },
+                        h6: {
+                            fontFamily: `${theme('fontFamily.sans')}`
+                        }
                     }
                 },
                 DEFAULT: {
