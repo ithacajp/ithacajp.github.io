@@ -1,0 +1,119 @@
+<style is:global>
+    .bubble-container {
+        /* Full-page coverage, behind nav & hero */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* behind everything */
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+    .bubble {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0;
+        border: 0.8px solid var(--bubble-color);
+        box-shadow: 0 0 3px var(--bubble-color);
+        animation: rise linear infinite;
+        will-change: transform, opacity;
+    }
+
+    @keyframes rise {
+        0% {
+            transform: translateX(0) translateY(0) scale(0.5);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(var(--translate-x)) translateY(-110vh) scale(1.5);
+            opacity: 0;
+        }
+    }
+</style>
+
+<div class="bubble-container" id="bubble-container"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // 1) Identify your Hero section.
+        //    If you have a better selector (like #heroSection), use that:
+        const heroEl = document.querySelector('section.relative');
+        if (!heroEl) return;
+
+        // 2) Get the bubble container
+        const container = document.getElementById('bubble-container');
+        if (!container) return;
+
+        // 3) Get bounding rect for the Hero
+        //    This gives us the hero's size and position relative to the viewport
+        const heroRect = heroEl.getBoundingClientRect();
+
+        // 4) Calculate "absolute" positions in the page
+        //    window.scrollX, scrollY handle if there's any scrolling
+        const heroBottom = window.scrollY + heroRect.bottom;
+        const heroLeft = window.scrollX + heroRect.left;
+
+        // Bubble config
+        const numberOfBubbles = 20;
+        const colors = ['#3498db', '#e74c3c', '#f1c40f', '#2ecc71', '#9b59b6', '#e67e22', '#1abc9c', '#34495e'];
+
+        // Random number helper
+        function getRandom(min: number, max: number) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // Create & animate a single bubble
+        function createBubble() {
+            const bubble = document.createElement('div');
+            bubble.classList.add('bubble');
+
+            // Random size
+            const size = getRandom(20, 80);
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+
+            // Place at bottom-left of the Hero (with a small offset below if desired)
+            // e.g. heroBottom + 10 means 10px below the hero's bottom
+            bubble.style.top = `${heroBottom}px`;
+            bubble.style.left = `${heroLeft}px`;
+
+            // Bubbles float horizontally at random as they rise
+            const translateX = getRandom(0, 100); // in vw
+            bubble.style.setProperty('--translate-x', `${translateX}vw`);
+
+            // Random color
+            const color = colors[Math.floor(getRandom(0, colors.length))];
+            bubble.style.setProperty('--bubble-color', color);
+
+            // Random animation duration (float speed) & delay
+            const duration = getRandom(5, 20);
+            bubble.style.animationDuration = `${duration}s`;
+            const delay = getRandom(0, duration);
+            bubble.style.animationDelay = `${delay}s`;
+
+            // Add bubble to container
+            if (container) {
+                container.appendChild(bubble);
+            }
+
+            // Recreate bubble when its animation finishes to maintain constant count
+            bubble.addEventListener('animationend', () => {
+                bubble.remove();
+                createBubble();
+            });
+        }
+
+        // 5) Create the initial batch of bubbles
+        for (let i = 0; i < numberOfBubbles; i++) {
+            createBubble();
+        }
+    });
+</script>
