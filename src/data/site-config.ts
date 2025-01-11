@@ -50,7 +50,7 @@ export type SiteConfig = {
 const siteConfig: SiteConfig = {
     title: '合同会社イタカ',
     subtitle: '創るよろこび',
-    description: '小型自走式ペンプロッターお合同会社イタカの会社サイトです。',
+    description: '小型自走式ペンプロッターの合同会社イタカの会社サイトです。',
     image: {
         src: '/ithaca-product.png',
         alt: 'Ithaca product iimage'
